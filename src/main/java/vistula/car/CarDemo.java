@@ -11,6 +11,9 @@ public class CarDemo {
 
         car1.setColor("black");
         car1.setPrice(340000);
+
+        System.out.print("\n Testing getters. Color = " + car1.getColor() + "\n\n");
+
         car1.delivery(2);
 
         System.out.println(car1.toString());

@@ -16,5 +16,24 @@ public class Car {
         this.color = color;
         this.quantity = quantity;
     }
+
+    public String getModel() {
+        return model;
+    }
+    public String getBrand() {
+        return brand;
+    }
+    public int getYear() {
+        return year;
+    }
+    public int getPrice() {
+        return price;
+    }
+    public String getColor() {
+        return color;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
 }
 

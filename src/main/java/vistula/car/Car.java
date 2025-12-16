@@ -54,5 +54,23 @@ public class Car {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public void delivery(int delivery) {
+        quantity += delivery;
+    }
+
+    public void sell(int sold) {
+        quantity -= sold;
+    }
+
+    public String toString() {
+        return "Car:" +
+                "\nModel = " + model +
+                "\nBrand = " + brand +
+                "\nYear = " + year +
+                "\nPrice = " + price +
+                "\nColor = " + color +
+                "\nQuantity = " + quantity;
+    }
 }
 

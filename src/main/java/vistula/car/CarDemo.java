@@ -1,21 +1,19 @@
 package vistula.car;
 
 public class CarDemo {
-    static void main() {
+    public static void main(String[] args) {
+        Car Car1 = new Car("GLE", "Mercedes", 2020, 350000, "white", 5);
+        Car Car2 = new Car("GLC", "Mercedes", 2023, 200000, "silver", 3);
 
-        Car car1 = new Car("GLE", "Mercedes", 2020, 350000, "white", 5);
+        System.out.println(Car1);
+        System.out.println(Car2);
 
-        System.out.println(car1.toString());
+        System.out.println(Car1.getColor());
+        int year = Car1.getYear();
+        Car1.setColor("black");
 
-        car1.sell(1);
-
-        car1.setColor("black");
-        car1.setPrice(340000);
-
-        System.out.print("\n Testing getters. Color = " + car1.getColor() + "\n\n");
-
-        car1.delivery(2);
-
-        System.out.println(car1.toString());
+        System.out.println("Are these objects equal? " + Car1.equals(Car2));
+        System.out.println("The HashCode of this object is: " + Car2.hashCode());
+        System.out.println("The HashCode of this object is: " + Car1.hashCode());
     }
 }

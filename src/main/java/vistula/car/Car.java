@@ -2,9 +2,11 @@ package vistula.car;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.EqualsAndHashCode;
 
 @Getter
 @Setter
+@EqualsAndHashCode(of = {"brand"})
 public class Car {
     private String model;
     private String brand;
